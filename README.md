@@ -8,25 +8,43 @@ chainable method-based API.
 
     npm install fields
 
+# Features
+
+* Tab completion for File and Select fields
+* Password masks
+* Titles, descriptions, prompt labels
+* Custom renderers and validation handler support
+* Fully customizable appearance
+* Command history
+* Batch field prompting including flow control
+
 # Field Types
 
 ## Text
 
-Simple prompt for capturing a string of text. Also supports passwords.
+Simple prompt for capturing a string of text. Also supports password masks and history.
+
+![Text field](https://www.evernote.com/shard/s75/sh/0ff002b2-7b15-4442-8a3a-afb806dac932/9a9d355870fb90099c042dac4f5cf12d/deep/0/Screenshot%207/18/13%2010:02%20PM.jpg)
 
 ## File
 
 Prompt for a specific file or directory. Supports tab completion.
+
+![File field](https://www.evernote.com/shard/s75/sh/f75b3e0a-ee8b-46bc-b0f7-1b93339de3ad/f53665b083f0a3cbcab0358a59a44ad1/deep/0/Screenshot%207/18/13%209:58%20PM.jpg)
 
 ## Select list
 
 Displays a list of options which a single item can be selected. Supports tab
 completion, numbered options, and setting the display method.
 
+![Select field](https://www.evernote.com/shard/s75/sh/872fdef6-b11a-4426-a6e9-ef07bd80a98e/801ffb85cd9d9247bee6bf33dcb0a940/deep/0/Screenshot%207/18/13%2010:09%20PM.jpg)
+
 ## Set
 
 Group multiple fields into a single "set" and prompts for each field. Supports
 skipping fields in the set.
+
+![Set field](https://www.evernote.com/shard/s75/sh/c1f725c2-c261-4a43-93ca-156899c18371/92acf90edb7a7a2775322d6c9595d506/deep/0/Screenshot%207/18/13%2010:12%20PM.jpg)
 
 # Getting Started
 
