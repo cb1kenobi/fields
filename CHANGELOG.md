@@ -3,6 +3,6 @@
  * Fixed bug with a select field instance is used more than once
  * Added screenshots to readme
 
-0.1.0 (7/17/2013)
+0.1.0 (7/18/2013)
 -------------------
  * Initial release
