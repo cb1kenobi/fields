@@ -17,6 +17,7 @@ chainable method-based API.
 * Fully customizable appearance
 * Command history
 * Batch field prompting including flow control
+* Support for select field option accelerators
 
 # Field Types
 
@@ -137,6 +138,7 @@ fields.setup({
 		* `error` (default value: `'red'`)
 		* `suggestion` (default value: `'cyan'`)
 		* `option` (default value: `'cyan'`)
+		* `accelerator` (default value `['underline', 'bold', 'cyan']`)
 	* Colors:
 		* `'red'`
 		* `'yellow'`
@@ -474,15 +476,19 @@ Returns a `Select` field instance with the following properties:
 	* `{function}` `callback(err, value)` A function that is called when
 	  prompting has completed.
 
+If an option label contains double underscores that wrap a character like
+`some__t__hing`, then `t` will become an accelerator that automatically maps `t`
+with `something`. Use the `accelerator` style to style it.
+
 Simple example:
 
 ```
 var list = new fields.Select({
 	title: 'What is your favorite milkshake?',
 	options: [
-		'vanilla',
-		'strawberry',
-		'chocolate'
+		'__v__anilla',
+		'stra__w__berry',
+		'cho__c__olate'
 	],
 	complete: true,
 	suggest: true
