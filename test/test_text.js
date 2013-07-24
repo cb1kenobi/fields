@@ -14,7 +14,8 @@ var set = fields.set({
 		index: 1,
 		password: true,
 		validate: function (value, callback) {
-			callback(!value.length, value);
+			!value && console.error('you must enter a password');
+			callback(!value, value);
 		}
 	})
 });

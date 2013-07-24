@@ -13,9 +13,9 @@ var yesno = fields.select({
 var milkshakes = fields.select({
 	title: 'What is your favorite milkshake?',
 	options: [
-		'vanilla',
-		'strawberry',
-		'chocolate'
+		'__v__anilla',
+		'st__r__awberry',
+		'cho__c__olate'
 	],
 	complete: true,
 	suggest: true,
@@ -50,7 +50,7 @@ var ppuuid = fields.select({
 	title: 'Select a UUID by number or name',
 	formatters: {
 		option: function (opt, idx, num) {
-			return '    ' + num + opt.value.cyan + '  ' + opt.name;
+			return num + opt.value.cyan + '  ' + opt.name;
 		}
 	},
 	numbered: true,
