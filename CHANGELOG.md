@@ -1,3 +1,7 @@
+0.1.3 (7/29/2013)
+-------------------
+ * Fixed bug with select fields where relistOnError=true was not firing properly if custom validators returned an error
+
 0.1.2 (7/23/2013)
 -------------------
  * Fixed bug set, but undefined default values being rendered as an empty string
