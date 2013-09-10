@@ -1,3 +1,10 @@
+0.1.5 (9/10/2013)
+-------------------
+ * Fixed bug with file field tab completion not properly completing partial
+   matches.
+ * Fixed bug with file field tab completion causing an exception when
+   encountering a broken symlink.
+
 0.1.4 (7/30/2013)
 -------------------
  * Fixed bug with file field tab completion not properly handling '~'
