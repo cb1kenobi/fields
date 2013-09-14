@@ -18,7 +18,7 @@ fields.set({
 		promptLabel: 'Change password?',
 		display: 'prompt',
 		options: [ 'yes', 'no' ],
-		next: function (value, callback) {
+		next: function (err, value, callback) {
 			if (value == 'no') {
 				callback('favfood');
 			} else {
@@ -62,7 +62,7 @@ fields.set({
 			promptLabel: 'Change password?',
 			display: 'prompt',
 			options: [ 'yes', 'no' ],
-			next: function (value, callback) {
+			next: function (err, value, callback) {
 				if (value == 'no') {
 					callback(3);
 				} else {

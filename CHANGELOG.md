@@ -1,3 +1,16 @@
+0.1.6 (9/13/2013)
+-------------------
+ * Added stopOnError flag to Set field. By default, an field that errors will
+   break out of the set prompting, but now you can set this flag to false and it
+   will continue prompting.
+ * Added repromptOnError flag to all fields. If a field has a validate()
+   function, then by default if it fails, then the field is re-prompted. You now
+   can set this to false and it will stop prompting when an error occurs.
+ * Cleaned up readme so that it hopefully is more readable.
+ * Note: when a Set finished prompting for a field with a next() function, it
+   now passes the error as the first argument, then the value. Before it just
+   passed the value.
+
 0.1.5 (9/10/2013)
 -------------------
  * Fixed bug with file field tab completion not properly completing partial
