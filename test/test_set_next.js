@@ -13,6 +13,7 @@ fields.set({
 	}),
 
 	password: fields.text({
+		title: 'Enter "123123" to login, otherwise you\'ll have to enter your username again',
 		promptLabel: 'Password',
 		validate: function (value, callback) {
 			if (!value.length) {
@@ -20,6 +21,7 @@ fields.set({
 			} else {
 				// try logging in
 				if (value != '123123') {
+					console.log('bad password');
 					callback(true);
 				} else {
 					// success

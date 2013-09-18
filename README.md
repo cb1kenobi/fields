@@ -274,7 +274,7 @@ Creates a new Text field.
 
 		  A string used to separate the prompt values. Default value is `'|'`.
 
-		* `{boolean}` `repromptOnError`
+		* `{boolean}` `opts.repromptOnError`
 
 		  If the field has a `validate()` function, validation fails, and
 		  `repromptOnError` is `true` (default), then it will reprompt for the value
@@ -302,7 +302,7 @@ Creates a new Text field.
 
 		  Trim the input after entered. Default value is `true`.
 
-		* `{function}` `opts.validate(value [, callback(err, value)])`
+		* `{function}` `opts.validate(value, callback(err, value), field)`
 
 		  A function to be called when a value is submitted. The `validate()`
 		  function is passed in the `value` and a `callback`.
@@ -323,6 +323,27 @@ Returns a `Text` field instance with the following properties:
 	* `{function}` `callback(err, value)`
 
 	  A function that is called when prompting has completed.
+
+* `{Set}` `set`
+
+  If the field is apart of a `Set`, then this property will reference the set,
+  otherwise `set` will be `null`.
+
+Events:
+
+* `pre-prompt`
+
+  Emitted before the current field is prompted.
+
+  * `{object}` `field` The current field
+
+* `post-prompt`
+
+  Emitted after the current field has been prompted.
+
+  * `{object}` `field` The current field
+  * `{anything}` `err` The error if something failed
+  * `{string}` `result` The result after the prompting
 
 Object-oriented example:
 
@@ -493,7 +514,7 @@ Creates a new File field.
 
 		  A string used to separate the prompt values. Default value is `'|'`.
 
-		* `{boolean}` `repromptOnError`
+		* `{boolean}` `opts.repromptOnError`
 
 		  If the field has a `validate()` function, validation fails, and
 		  `repromptOnError` is `true` (default), then it will reprompt for the value
@@ -521,7 +542,7 @@ Creates a new File field.
 
 		  Trim the input after entered. Default value is `true`.
 
-		* `{function}` `opts.validate(value [, callback(err, value)])`
+		* `{function}` `opts.validate(value, callback(err, value), field)`
 
 		  A function to be called when a value is submitted. The `validate()`
 		  function is passed in the `value` and a `callback`.
@@ -542,6 +563,27 @@ Returns a `File` field instance with the following properties:
 	* `{function}` `callback(err, value)`
 
 	  A function that is called when prompting has completed.
+
+* `{Set}` `set`
+
+  If the field is apart of a `Set`, then this property will reference the set,
+  otherwise `set` will be `null`.
+
+Events:
+
+* `pre-prompt`
+
+  Emitted before the current field is prompted.
+
+  * `{object}` `field` The current field
+
+* `post-prompt`
+
+  Emitted after the current field has been prompted.
+
+  * `{object}` `field` The current field
+  * `{anything}` `err` The error if something failed
+  * `{string}` `result` The result after the prompting
 
 Example:
 
@@ -569,6 +611,11 @@ Creates a new Select field.
 * `{object}` `opts` Select field options.
 
 	* Select field specific options:
+
+		* `{boolean}` `opts.autoSelectOne`
+
+		  If `true` and the `options` array contains a single entry, then it will skip
+		  the prompting and immediately call the callback. Default value is `false`.
 
 		* `{string}` `opts.display`
 
@@ -732,7 +779,7 @@ Creates a new Select field.
 
 		  A string used to separate the prompt values. Default value is `'|'`.
 
-		* `{boolean}` `repromptOnError`
+		* `{boolean}` `opts.repromptOnError`
 
 		  If the field has a `validate()` function, validation fails, and
 		  `repromptOnError` is `true` (default), then it will reprompt for the value
@@ -760,7 +807,7 @@ Creates a new Select field.
 
 		  Trim the input after entered. Default value is `true`.
 
-		* `{function}` `opts.validate(value [, callback(err, value)])`
+		* `{function}` `opts.validate(value, callback(err, value), field)`
 
 		  A function to be called when a value is submitted. The `validate()`
 		  function is passed in the `value` and a `callback`.
@@ -782,9 +829,30 @@ Returns a `Select` field instance with the following properties:
 
 	  A function that is called when prompting has completed.
 
+* `{Set}` `set`
+
+  If the field is apart of a `Set`, then this property will reference the set,
+  otherwise `set` will be `null`.
+
 If an option label contains double underscores that wrap a character like
 `some__t__hing`, then `t` will become an accelerator that automatically maps `t`
 with `something`. Use the `accelerator` style to style it.
+
+Events:
+
+* `pre-prompt`
+
+  Emitted before the current field is prompted.
+
+  * `{object}` `field` The current field
+
+* `post-prompt`
+
+  Emitted after the current field has been prompted.
+
+  * `{object}` `field` The current field
+  * `{anything}` `err` The error if something failed
+  * `{string}` `result` The result after the prompting
 
 Simple example:
 
@@ -878,6 +946,22 @@ Returns a `Set` field instance with the following properties:
 	* `{function}` `callback(err, value)`
 
 	  A function that is called when prompting has completed.
+
+Events:
+
+* `pre-prompt`
+
+  Emitted before the current field is prompted.
+
+  * `{object}` `field` The current field
+
+* `post-prompt`
+
+  Emitted after the current field has been prompted.
+
+  * `{object}` `field` The current field
+  * `{anything}` `err` The error if something failed
+  * `{string}` `result` The result after the prompting
 
 Object-based example:
 

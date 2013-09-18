@@ -1,3 +1,14 @@
+0.1.7 (9/18/2013)
+-------------------
+ * Added "pre-prompt" and "post-prompt" events to all field types.
+ * Fixed bug when instantiating a Set using the method format.
+ * Moved Select field option pre-rendering to the prompt() function so that
+   options can be modified prior to prompting.
+ * Added "autoSelectOne" flag to Select fields to skip the prompting if there
+   is only one option.
+ * If a Select field doesn't have any options, it immediately fire the callback.
+ * Named all public anonymous functions.
+
 0.1.6 (9/13/2013)
 -------------------
  * Added stopOnError flag to Set field. By default, an field that errors will

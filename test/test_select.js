@@ -22,6 +22,14 @@ var milkshakes = fields.select({
 	suggestThreshold: 3
 });
 
+var autoselect = fields.select({
+	title: 'This should not be prompted for because there is only one option',
+	options: [
+		'foo',
+	],
+	autoSelectOne: true
+})
+
 var actest = fields.select({
 	title: 'Auto-complete test',
 	desc: 'Just type "he" and hit tab',
@@ -82,6 +90,7 @@ var ppuuid = fields.select({
 fields.set([
 	yesno,
 	milkshakes,
+	autoselect,
 	actest,
 	colors,
 	ppuuid
