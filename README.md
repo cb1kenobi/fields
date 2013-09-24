@@ -4,7 +4,7 @@ Fields is a small library that provides a handful of useful input fields for use
 at the command line. Each field type supports both an object-oriented and
 chainable method-based API.
 
-[![NPM](https://nodei.co/npm/fields.png)](https://nodei.co/npm/fields/)
+[![NPM](https://nodei.co/npm/fields.png?downloads=true&stars=true)](https://nodei.co/npm/fields/)
 
 # Installation
 
