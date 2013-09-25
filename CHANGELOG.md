@@ -1,3 +1,7 @@
+0.1.7 (9/25/2013)
+-------------------
+ * Added missing "pre-prompt" event to File and Select fields.
+
 0.1.7 (9/18/2013)
 -------------------
  * Added "pre-prompt" and "post-prompt" events to all field types.
