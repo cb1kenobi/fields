@@ -1,4 +1,8 @@
-0.1.7 (9/25/2013)
+0.1.9 (9/27/2013)
+-------------------
+ * Added one more line of whitespace after printing an error message.
+
+0.1.8 (9/25/2013)
 -------------------
  * Added missing "pre-prompt" event to File and Select fields.
 
