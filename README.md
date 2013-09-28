@@ -196,6 +196,10 @@ Creates a new Text field.
 
 			  Custom field description formatter.
 
+			* `{function}` `opts.formatters.error(Error|string)`
+
+			  Error message formatter.
+
 			* `{function}` `opts.formatters.title(string)`
 
 			  Custom field title formatter.
@@ -417,6 +421,10 @@ Creates a new File field.
 
 			  Custom field description formatter.
 
+			* `{function}` `opts.formatters.error(Error|string)`
+
+			  Error message formatter.
+
 			* `{function}` `opts.formatters.title(string)`
 
 			  Custom field title formatter.
@@ -629,12 +637,21 @@ Creates a new Select field.
 
 		  An object of specific formatting functions.
 
-			* `{function}` `opts.formatters.desc(string)` Custom field
-			  description formatter.
-			* `{function}` `opts.formatters.option(string)` Custom select list
-			  option formatter.
-			* `{function}` `opts.formatters.title(string)` Custom field title
-			  formatter.
+			* `{function}` `opts.formatters.desc(string)`
+
+			  Custom field description formatter.
+
+			* `{function}` `opts.formatters.error(Error|string)`
+
+			  Error message formatter.
+
+			* `{function}` `opts.formatters.option(string)`
+
+			  Custom select list option formatter.
+
+			* `{function}` `opts.formatters.title(string)`
+
+			  Custom field title formatter.
 
 		* `{string}` `opts.margin`
 

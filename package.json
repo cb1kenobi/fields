@@ -5,7 +5,7 @@
 	"author": {
 		"name": "Chris Barber"
 	},
-	"version": "0.1.9",
+	"version": "0.1.10",
 	"licenses": [
 		{
 			"type": "MIT",
@@ -19,9 +19,9 @@
 		"lib": "./lib"
 	},
 	"dependencies": {
-		"colors": "0.6.x",
-		"keypress": "0.1.x",
-		"sprintf": "0.1.x"
+		"colors": "~0.6.2",
+		"keypress": "~0.1.0",
+		"sprintf": "~0.1.2"
 	},
 	"homepage": "https://github.com/cb1kenobi/fields",
 	"bugs": "https://github.com/cb1kenobi/fields/issues",

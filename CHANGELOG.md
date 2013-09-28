@@ -1,3 +1,8 @@
+0.1.10 (9/28/2013)
+-------------------
+ * Instead of extra whitespace after errors that was added in 0.1.9, now you can
+   just use a custom formatter and do whatever you'd like with the error.
+
 0.1.9 (9/27/2013)
 -------------------
  * Added one more line of whitespace after printing an error message.
