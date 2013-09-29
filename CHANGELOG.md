@@ -1,3 +1,10 @@
+0.1.11 (9/28/2013)
+-------------------
+ * Fixed a bug where an exception thrown from a field's validate() function's
+   callback would be caught even though the error happened in the callback,
+   not the actual validate() function. Now exceptions from the callback are
+   rethrown.
+
 0.1.10 (9/28/2013)
 -------------------
  * Instead of extra whitespace after errors that was added in 0.1.9, now you can
