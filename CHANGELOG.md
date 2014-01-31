@@ -1,3 +1,8 @@
+0.1.12 (1/30/2014)
+-------------------
+ * Fixed bug where select field validate callbacks that fail were not triggering
+   the select field to reprompt correctly.
+
 0.1.11 (9/28/2013)
 -------------------
  * Fixed a bug where an exception thrown from a field's validate() function's
