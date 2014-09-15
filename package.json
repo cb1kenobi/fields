@@ -20,8 +20,8 @@
 	},
 	"dependencies": {
 		"colors": "~0.6.2",
-		"keypress": "~0.1.0",
-		"sprintf": "~0.1.2"
+		"keypress": "~0.2.1",
+		"sprintf": "~0.1.4"
 	},
 	"homepage": "https://github.com/cb1kenobi/fields",
 	"bugs": "https://github.com/cb1kenobi/fields/issues",
