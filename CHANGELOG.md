@@ -1,4 +1,4 @@
-Next release
+0.1.17 (10/9/2014)
 -------------------
  * Added the ability to autocomplete select list options based on multiple
    values.
