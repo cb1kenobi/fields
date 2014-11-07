@@ -1,3 +1,12 @@
+0.1.19 (11/6/2014)
+-------------------
+ * Added ignoreCase flag for select lists when manually entering values.
+
+0.1.18 (11/6/2014)
+-------------------
+ * Fixed bug with select lists that have multiple complete values and the value
+   is falsey.
+
 0.1.17 (10/9/2014)
 -------------------
  * Added the ability to autocomplete select list options based on multiple
