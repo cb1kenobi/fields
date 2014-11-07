@@ -1,3 +1,7 @@
+0.1.20 (11/6/2014)
+-------------------
+ * Whoops, published a little too quick. Bug fix from 0.1.19 new feature.
+
 0.1.19 (11/6/2014)
 -------------------
  * Added ignoreCase flag for select lists when manually entering values.
