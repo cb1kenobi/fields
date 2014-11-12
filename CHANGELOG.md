@@ -1,3 +1,8 @@
+0.1.21 (11/11/2014)
+-------------------
+ * Fixed bug where the wrong select list attribute was being checked when
+   creating the distinct values lookup.
+
 0.1.20 (11/6/2014)
 -------------------
  * Whoops, published a little too quick. Bug fix from 0.1.19 new feature.
