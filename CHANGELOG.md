@@ -1,3 +1,8 @@
+0.1.22 (11/12/2014)
+-------------------
+ * Fixed bug with select list when value is falsey and field has zeroSkip and
+   numbered enabled.
+
 0.1.21 (11/11/2014)
 -------------------
  * Fixed bug where the wrong select list attribute was being checked when
