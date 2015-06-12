@@ -1,3 +1,8 @@
+0.1.24 (6/11/2015)
+-------------------
+ * Default to white fg text instead of magenta on Windows Powershell for input
+   and mask color text. Magenta was "invisible" on Powershell.
+
 0.1.23 (11/24/2014)
 -------------------
  * Fixed bug where select lists that have autoSelectOne enabled does not call
