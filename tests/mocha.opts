@@ -1,0 +1,4 @@
+--require tests/env
+--reporter spec
+--slow 20
+--check-leaks
