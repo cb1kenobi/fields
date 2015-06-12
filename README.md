@@ -654,7 +654,7 @@ Creates a new Select field.
 			  Custom field title formatter.
 
 		* `{boolean}` `opts.ignoreCase`
-		
+
 		  When `true`, ignores the case of the value being entered. Default value is
 		  `false`.
 
@@ -1080,7 +1080,7 @@ fields.set([
 
 (The MIT License)
 
-Copyright (c) 2013-2014 Chris Barber
+Copyright (c) 2013-2015 Chris Barber
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
