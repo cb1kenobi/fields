@@ -15,10 +15,7 @@
     "fieldset",
     "cli"
   ],
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://github.com/cb1kenobi/fields/raw/master/LICENSE"
-  }],
+  "license": "MIT",
   "directories": {
     "lib": "./lib"
   },
