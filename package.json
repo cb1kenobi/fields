@@ -5,7 +5,7 @@
   "main": "./lib/index",
   "author": {
     "name": "Chris Barber",
-    "email": "<chris@cb1inc.com>"
+    "email": "chris@cb1inc.com"
   },
   "keywords": [
     "prompt",
